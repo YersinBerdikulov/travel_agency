@@ -1,17 +1,16 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
+
 
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
 
 router.get('/', (req, res) => {
-    res.send('Hello from travelRoutes.js');
+    res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
-router.post('/travelagency', (req, res) => {
-    console.log(req.body);
-    res.send('POST request to the homepage');
-});
+
 
 module.exports = router;

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./styles/about.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+      
+          <a class="navbar-brand" href="/">
+            <img src="./img/travel.jpg" class="d-inline-block align-top" width="40" height="40" alt="">
+            <span class="ms-2 ">Travel Agency</span>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-5">
+                <a class="nav-link fw-bold" href="/travelagency">Tours</a> 
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link fw-bold" href="/about">About</a>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      
+    </nav>
+    
+  <header class="jumbotron jumbotron-fluid">
+    <div class="overlay">
+      <div class="container">
+        <h1 class="display-4">About Our Travel Agency</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="p-5">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="fas fa-globe fa-3x"></i>
+            <h3>Global Reach</h3>
+            <p>We offer tours and travel packages worldwide. Bonuses and more.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Luxury Hotels</h3>
+            <p>We partner with top luxury hotels for the best experience.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="icon-box">
+            <i class="fas fa-plane fa-3x"></i>
+            <h3>Flights Included</h3>
+            <p>Our packages take care of flights so you don't have to.</p>  
+          </div>
+        </div>
+        
+      </div>
+      
+      <h2 class="mt-4">Our Story</h2>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
+      
+      
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+    
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>File Structure</h2>
+          <p>This project has a structured file organization including:</p>
+          <ul>
+            <li>public - for static assets</li>
+            <li>routes - for route handling</li> 
+            <li>views - for HTML templates</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Server</h2>
+          <p>The server is built with Node.js in combination with Express.js and runs on port 3000.</p>
+          <p>Also, server provides weather information using WeatherAPI and photos with help of Unsplash</p>
+          <p>For convenient use of API it uses Axios</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Routes</h2>
+          <p>Routes are defined for home, tours, and about pages.</p>
+        </div>
+
+        <div class="col-md-6">
+          <h2>NPM Packages</h2>
+          <p>NPM packages are used for tour pricing and weather data.</p>
+          <p>Express</p>
+          <p>Axios</p>
+        </div>
+        
+      </div>
+      <div class="my-5">
+        <a href="/travelagency" class="btn btn-primary btn-lg">Browse Tours</a>
+    </div>
+    </div>
+  </section>
+
+  <footer class="bg-info text-center text-lg-start fixed-bottom">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> 
+      <a class="text-dark" href="https://github.com/YersinBerdikulov">Developed by Yersin Berdikulov [SE-2209]</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

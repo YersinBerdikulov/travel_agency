@@ -5,20 +5,19 @@ const port = 3000;
 
 const travelRoutes = require('./routes/travelRoutes');
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + "/public"));
 
-// Handle GET request to root route
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + "/views/home.html");
 });
 
-// Use travel routes
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + "/views/about.html");
+});
+
 app.use('/travelagency', travelRoutes);
 
-// Listen on port 3000
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
