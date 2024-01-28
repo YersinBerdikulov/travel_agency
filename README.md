@@ -9,7 +9,7 @@ git clone https://github.com/YersinBerdikulov/travel_agency.git
 ## Install dependencies and run
 ```
 npm install
-node server.js
+npm start
 ```
 ## About
 This project has been built for practicing backend in NodeJS. It uses ExpressJS as a main module, for handling http requests, serving files and in general for building entire website.
