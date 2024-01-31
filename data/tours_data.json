@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Paris Tour",
+        "destination": "Paris",
+        "country": "France",
+        "price": "$1000",
+        "date": "01.06.2024"
+    },
+
+    {
+        "id": 2,
+        "name": "Rome Tour",
+        "destination": "Rome",
+        "country": "Italy",
+        "price": "$1400",
+        "date": "07.08.2024"
+    },
+
+    {
+        "id": 3,
+        "name": "London Tour",
+        "destination": "London",
+        "country": "England",
+        "price": "$1500",
+        "date": "25.03.2025"
+    }
+]

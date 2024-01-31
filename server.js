@@ -1,8 +1,12 @@
 const express = require('express');
 const axios = require('axios');
+const bodyparser = require('body-parser');
 
 
 const app = express();
+
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: true }));
 
 const port = 3000;
 
@@ -17,7 +21,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.sendFile(__dirname + "/views/about.html");
 });
-
+ 
 app.use('/travelagency', travelRoutes);
 
 app.listen(port, () => {
