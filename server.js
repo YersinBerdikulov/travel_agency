@@ -4,6 +4,9 @@ const bodyparser = require('body-parser');
 const fs = require('fs');
 
 
+const toursFilePath = './data/tours_data.json';
+const historyFilePath = './data/history.json';
+
 const app = express();
 
 app.use(bodyparser.json());
